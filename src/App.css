@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.plus-jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@media screen and (max-width: 360px) {
+  .courses {
+    grid-template-columns: 1fr !important;
+  }
+  .skills {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .review {
+    flex-direction: column;
+  }
+  .review-btn {
+    justify-content: center;
+    margin-top: 12px;
+  }
+}
+
+/* Custom scrollbar hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.ellipsis-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
